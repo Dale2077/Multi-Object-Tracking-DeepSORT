@@ -1,0 +1,39 @@
+det_thresh:
+  type: uniform
+  default: 0.5
+  range: [0.3, 0.7]
+
+max_age:
+  type: qrandint
+  default: 30
+  range: [10, 61, 10]
+
+min_hits:
+  type: randint
+  default: 3
+  range: [1, 6]
+
+max_dist:
+  type: uniform
+  default: 0.2
+  range: [0.1, 0.5]
+
+max_iou_dist:
+  type: uniform
+  default: 0.7
+  range: [0.3, 0.9]
+
+nn_budget:
+  type: qrandint
+  default: 100
+  range: [50, 201, 50]
+
+mc_lambda:
+  type: uniform
+  default: 0.98
+  range: [0.9, 0.999]
+
+ema_alpha:
+  type: uniform
+  default: 0.9
+  range: [0.7, 0.99]

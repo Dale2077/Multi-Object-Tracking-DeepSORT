@@ -1,0 +1,61 @@
+# OS / IDE
+.DS_Store
+.vscode/
+.idea/
+
+# Python cache / build
+__pycache__/
+*.py[cod]
+*.pyo
+*.so
+.pycache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.eggs/
+*.egg-info/
+build/
+dist/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Logs / temp
+*.log
+tmp/
+temp/
+*.tmp
+
+# Runtime / experiment outputs
+runs/
+output*.mp4
+test_results/
+
+# Datasets and local training assets
+datasets/
+MOT16/
+mot16_yolo/
+
+# Local-only documentation assets
+docs/thesis/
+slidev/
+tmp-slidev-build/
+
+# Exported model artifacts
+*.pt
+*.pth
+*.onnx
+*.engine
+*.torchscript
+*.tflite
+*_openvino_model/
+
+# Keep lightweight demo assets in the repository
+!osnet_x0_25_msmt17.pt
+!test_video.mp4
+!test_video_2.mp4
+!yolov5s.pt
+!yolov8n.pt
